@@ -9,11 +9,16 @@ Whether you’re renaming files, cleaning up directories, or just experimenting 
 
 📂 What’s Inside?
 
-File Name	Description
-code_1.py	A basic script demonstrating examples of automation.
-remove_empty.py	Deletes all empty files and folders in a directory 🗑️.
-rename_lectures.py	Renames files (e.g., lecture notes) based on a specified naming format ✏️.
-test & test2	Test files to ensure the scripts are working as intended ✅.
+File Name   -   escription
+-----------------------------
+code_1.py --- A basic script demonstrating examples of automation.
+---------------------------------------------------------------------
+remove_empty.py --- Deletes all empty files and folders in a directory 🗑️.
+-----------------------------------------------------------------------
+rename_lectures.py ---	Renames files (e.g., lecture notes) based on a specified naming format ✏️.
+---------------------------------------------------------------------------------------------------
+test & test2 --- Test files to ensure the scripts are working as intended ✅.
+----------------------------------------------------------------------------
 
 🛠️ How to Get Started
 	1.	Clone the Repository 🌀
