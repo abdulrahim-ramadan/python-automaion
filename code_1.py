@@ -48,9 +48,9 @@ import os
 
 #print(os.path.isdir('test'))
 
-path = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+#path = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
-path2 = os.path.dirname(os.getcwd()) #1
+#path2 = os.path.dirname(os.getcwd()) #1
 
 #print(os.path.abspath(__file__))
 #print(os.path.dirname(os.path.abspath(__file__)))
@@ -59,12 +59,38 @@ path2 = os.path.dirname(os.getcwd()) #1
 
 #اذا بدي انسخ ملف مكان
 
-import shutil
+#import shutil
 
 #shutil.copy('python.txt' , 'test/')
 
 #shutil.move('python.txt' , 'test/')
 
-shutil.copytree('test' , 'test2')
+#shutil.copytree('test' , 'test2')
+
+#-----------------------------------
+
+import schedule
+import time
+
+def print_path():
+    for dirpath , dirnames , filennames in os.walk('.'):
+        print(filennames)
+
+
+
+schedule.every(1).minutes.do(print_path)
+#schedule.every().hour.do(job)
+#schedule.every().day.at("10:30").do(job)
+#schedule.every(5).to(10).minutes.do(job)
+#schedule.every().monday.do(job)
+#schedule.every().wednesday.at("13:15").do(job)
+#schedule.every().day.at("12:42", "Europe/Amsterdam").do(job)
+#schedule.every().minute.at(":17").do(job)
+
+while True:
+    schedule.run_pending()
+    time.sleep(1)
+  
+
 
 
